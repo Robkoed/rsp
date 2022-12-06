@@ -1,0 +1,51 @@
+﻿<Window x:Class="RPS.MainWindow"
+        x:Name="Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="652" Width="881">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="Person" Grid.RowSpan="3" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="2" Source="/rock.png" Visibility="Visible"></Image>
+        <Button x:Name="rock" Content="Rock" Grid.Row="1" FontSize="30" Background="Black" Foreground="White" Click="rock_Click"></Button>
+        <Button x:Name="sesor" Content="Scissor" Grid.Row="3" FontSize="20" Background="Black" Foreground="White" Click="sesor_Click"></Button>
+        <Button x:Name="paper" Content="Paper" Grid.Row="5" FontSize="30" Background="Black" Foreground="White" Click="paper_Click"></Button>
+        <Button x:Name="Start" Content="Start" Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="3" FontSize="30" Background="Black" Foreground="White" Click="Start_Click"></Button>
+        <Image x:Name="Computer" Grid.RowSpan="3" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="7"  Source="/rock.reverse.png" Visibility="Visible"></Image>
+        <Label x:Name="timer" Height="80" Width="80" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="3" Text="Score" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="Score" Grid.Column="4" Grid.Row="6" Grid.ColumnSpan="3" Text=":" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <TextBlock />
+
+
+    </Grid>
+</Window>
